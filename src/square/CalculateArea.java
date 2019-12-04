@@ -1,10 +1,11 @@
 package square;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class CalculateArea {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -18,15 +19,13 @@ public class CalculateArea {
 
         switch (shape.toLowerCase()) {
             case "круг":
-                System.out.print(circle.area());
+                circle.printData();
                 break;
             case "треугольник":
-
-                System.out.print(triangle.area());
+                triangle.printData();
                 break;
             case "прямоугольник":
-
-                System.out.print(rectangle.area());
+                rectangle.printData();
                 break;
             default:
                 System.out.println("Извините, данной фигуры нет в нашей базе!");

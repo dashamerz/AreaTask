@@ -1,13 +1,16 @@
 package square;
 
+import java.io.IOException;
+
 public abstract class Shape {
 
-    protected double area(double x, double y) {
+    public abstract void getData() throws IOException;
 
+    public double calculateArea() {
         return 0;
     }
-    protected double area(double z) {
 
+    public double calculatePerimeter() {
         return 0;
     }
 }
